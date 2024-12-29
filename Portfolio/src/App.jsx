@@ -3,6 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Main from './components/Main';
 import 'tailwindcss/tailwind.css';
+import Projects from './components/Projects/Projects';
+import ExperiencePage from './components/Experience/Experience';
+import EducationPage from './components/Education/Education';
+
 
 const App = () => {
   return (
@@ -10,13 +14,11 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/experience" element={<ExperiencePage />} />
+        <Route path="/education" element={<EducationPage />} />
       </Routes>
-      <main>
-        {/* Add empty sections to enable scrolling */}
-        {['home', 'about', 'skills', 'education', 'work', 'experience', 'contact'].map(section => (
-          <section id={section} key={section} className="h-screen"></section>
-        ))}
-      </main>
+     
     </Router>
   );
 };
