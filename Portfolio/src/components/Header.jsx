@@ -22,11 +22,13 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
         <div className="flex items-center">
+          <Link to="/">
           <img
             src="/logo.png"
             alt="Logo"
             className="w-12 h-12 md:w-14 md:h-14 hover:scale-105 transition-transform duration-300"
           />
+          </Link>
         </div>
 
         {/* Navigation */}
@@ -35,11 +37,11 @@ const Header = () => {
             { name: 'Home', path: '/' },
             { name: 'About', path: '/about' },
             { name: 'Projects', path: '/projects' },
-            { name: 'Achievements', path: '/achievements' },
+            // { name: 'Achievements', path: '/achievements' },
             { name: 'Education', path: '/education' },
             { name: 'Experience', path: '/experience' },
-            { name: 'Hacks', path: '/hack' },
-            { name: 'Blogs', path: '/blog' },
+           // { name: 'Hacks', path: '/hack' },
+          //  { name: 'Blogs', path: '/blog' },
             { name: 'Contact', path: '/contact' },
           ].map(({ name, path }) => (
             <Link

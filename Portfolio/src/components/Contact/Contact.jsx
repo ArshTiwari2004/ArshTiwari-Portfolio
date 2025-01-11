@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Github, Linkedin, Twitter, Instagram, Facebook, Link, BookOpen, MessageCircle, Users } from 'lucide-react';
+import ParticleBackground from '../ParticleBackground';
 
 const Contact = () => {
   const socialLinks = [
@@ -17,7 +18,8 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <div className="min-h-screen relative">
+      <ParticleBackground />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="space-y-16">
           {/* Hero Section with Gradient Background */}
@@ -77,6 +79,7 @@ const Contact = () => {
                 <div>
                   <input
                     type="text"
+                    label="Name"
                     className="w-full px-6 py-4 rounded-xl bg-white/80 backdrop-blur-sm border-0 focus:ring-2 focus:ring-blue-500/20 shadow-lg shadow-blue-500/5 hover:shadow-blue-500/10 transition-all duration-300"
                     placeholder="Your name"
                   />

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
-import ParticleBackground from '../ParticleBackground';
+import { BackgroundLines } from '../ui/background-lines';
 
 const About = () => {
   return (
-  
-    <div className="min-h-screen bg-white">
-        <ParticleBackground />
+   
+    <BackgroundLines className="relative">
+
+       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       
         <div className="text-center mb-16">
@@ -52,11 +53,11 @@ const About = () => {
               Full Stack Developer
             </h4>
             
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
              
 I’m a passionate Full-Stack Developer based in India, specializing in crafting modern web applications with clean, efficient code and intuitive user experiences. Currently, I’m pursuing a B.Tech in Computer Science Engineering at GGSIPU's BPIT and exploring data science through a B.S. degree at IIT Madras, blending innovation and learning to create impactful digital solutions.
             </p>
-            <p className = "text-gray-600 leading-relaxed">
+            <p className = "text-gray-900 leading-relaxed">
             Web Developer intern @EternaInfoTech | Ex-Community Manager intern @InAmigos Foundation| Intern @Kaizen,IIT Delhi | 1x Hack winner | 2x Finalist | 12x Participated | Junior Council @nameSpace
             </p>
 
@@ -88,7 +89,8 @@ I’m a passionate Full-Stack Developer based in India, specializing in crafting
           </div>
         </div>
       </div>
-    </div>
+      </BackgroundLines >
+
   );
 };
 

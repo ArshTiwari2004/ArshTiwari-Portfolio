@@ -85,7 +85,7 @@ const Projects = () => {
   return (
     <div className="relative min-h-screen">
         <ProjectsParticleBackground />
-    <div className=" min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-20">
+    <div className=" min-h-screen bg-white py-20">
         
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -116,7 +116,7 @@ const Projects = () => {
                 variants={projectVariants}
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
-                className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300"
+                className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300 border border-blue-600" // 3d look
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="relative h-64 md:h-full">
