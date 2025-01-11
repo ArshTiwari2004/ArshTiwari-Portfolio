@@ -1,12 +1,14 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { Mail } from 'lucide-react';
+import ParticleBackground from './ParticleBackground';
 
 const Main = () => {
   const description = "Transforming ideas into impactful digital solutions, I blend creativity with cutting-edge technology to drive meaningful innovation. Guided by a passion for learning and an eye for detail, I thrive on building experiences that make a difference. Whether crafting sleek applications or exploring emerging tech, I am dedicated to shaping a future fueled by purpose and excellence.";
 
   return (
-    <>
+    <div className="relative min-h-screen">
+      <ParticleBackground />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -29,7 +31,7 @@ const Main = () => {
             <div className="text-xl font-semibold text-gray-700">
               <span className="text-blue-600">
                 <Typewriter
-                  words={['I am a full-stack web developer', 'I am passionate about app development', 'I participate actively in hackathons because I like to win ', 'Competitive Programming', 'I build and deploy web solutions' , 'I contribute to open-source projects' , 'I attend tech meetups to network and like connecting with tech enthusiasts']}
+                  words={['I am a full-stack web developer', 'I am passionate about app development', 'I participate actively in hackathons because I like to win ', 'I build and deploy web solutions' , 'I contribute to open-source projects' , 'I enjoy networking with tech enthusiasts at meetups.' , 'I thrive on innovation with an entrepreneurial mindset.' , 'Passionate about helping startups scale their websites.']}
                   loop={0}
                   cursor
                   cursorStyle="_"
@@ -40,7 +42,7 @@ const Main = () => {
               </span>
             </div>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-900 leading-relaxed">
               {description}
             </p>
 
@@ -98,7 +100,9 @@ const Main = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
+
+  
   );
 };
 

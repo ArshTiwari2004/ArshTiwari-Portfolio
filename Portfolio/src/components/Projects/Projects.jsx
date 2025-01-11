@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { GitCommit, ExternalLink } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
+import ProjectsParticleBackground from './Projectsparticlebackground';
 
 const Projects = () => {
   // Sample projects data - replace with your actual projects
@@ -82,7 +83,10 @@ const Projects = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-20">
+    <div className="relative min-h-screen">
+        <ProjectsParticleBackground />
+    <div className=" min-h-screen bg-white py-20">
+        
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -112,7 +116,7 @@ const Projects = () => {
                 variants={projectVariants}
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
-                className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300"
+                className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300 border border-blue-600" // 3d look
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="relative h-64 md:h-full">
@@ -183,6 +187,8 @@ const Projects = () => {
           })}
         </div>
       </div>
+
+    </div>
     </div>
   );
 };

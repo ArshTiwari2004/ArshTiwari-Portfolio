@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring, useInView } from 'framer-motion';
 import { ExternalLink, Award, Briefcase, Calendar, MapPin, Globe } from 'lucide-react';
+import ParticleBackground from '../ParticleBackground';
 
 const ExperienceCard = ({ experience, index }) => {
   const ref = useRef(null);
@@ -148,7 +149,8 @@ const ExperiencePage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-20 relative overflow-hidden">
+    <div className="min-h-screen  py-20 relative overflow-hidden">
+      <ParticleBackground />
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
