@@ -58,7 +58,7 @@ const About = () => {
 I’m a passionate Full-Stack Developer based in India, specializing in crafting modern web applications with clean, efficient code and intuitive user experiences. Currently, I’m pursuing a B.Tech in Computer Science Engineering at GGSIPU's BPIT and exploring data science through a B.S. degree at IIT Madras, blending innovation and learning to create impactful digital solutions.
             </p>
             <p className = "text-gray-900 leading-relaxed">
-            Web Developer intern @EternaInfoTech | Ex-Community Manager intern @InAmigos Foundation| Intern @Kaizen,IIT Delhi | 1x Hack winner | 2x Finalist | 12x Participated | Junior Council @nameSpace
+            Upcoming SWE Intern @Mappls | Developer Intern @EternaInfoTech | Organizer of Pears Global Hackathon | Ex-Community Manager Intern @InAmigos Foundation | Intern @Kaizen, IIT Delhi | 5x Hack Winner | 5x Finalist | Geek Room | Full Stack Dev
             </p>
 
             <div className="space-y-4">

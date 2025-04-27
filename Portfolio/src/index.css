@@ -1,8 +1,13 @@
-
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
+@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Nanum+Pen+Script&display=swap');
 
+/* Add CSS variables for fonts */
+:root {
+  --font-sans: 'Poppins', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+}
 
+/* Base styles */
+body {
+  font-family: var(--font-sans);
+}
