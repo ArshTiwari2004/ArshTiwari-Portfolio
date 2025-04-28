@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
 import { FiDownload } from "react-icons/fi"
 import { motion } from "framer-motion"
 import { Moon, Sun } from "lucide-react"
@@ -23,6 +22,14 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     setMobileMenuOpen(!mobileMenuOpen)
   }
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+      setMobileMenuOpen(false)
+    }
+  }
+
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -38,7 +45,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
         <div className="flex items-center">
-          <Link to="/">
+          <button onClick={() => scrollToSection('home')}>
             <motion.img
               src="/logo.png"
               alt="Logo"
@@ -46,28 +53,28 @@ const Header = ({ darkMode, toggleDarkMode }) => {
               whileHover={{ rotate: 10, scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             />
-          </Link>
+          </button>
         </div>
 
         {/* Navigation */}
         <nav className={`hidden md:flex items-center space-x-8 ${darkMode ? "text-gray-200" : "text-gray-700"}`}>
           {[
-            { name: "Home", path: "/" },
-            { name: "About", path: "/about" },
-            { name: "Projects", path: "/projects" },
-            { name: "Education", path: "/education" },
-            { name: "Experience", path: "/experience" },
-            { name: "Contact", path: "/contact" },
-          ].map(({ name, path }) => (
-            <Link
+            { name: "Home", id: "home" },
+            { name: "About", id: "about" },
+            { name: "Projects", id: "projects" },
+            { name: "Education", id: "education" },
+            { name: "Experience", id: "experience" },
+            { name: "Contact", id: "contact" },
+          ].map(({ name, id }) => (
+            <button
               key={name}
-              to={path}
+              onClick={() => scrollToSection(id)}
               className={`font-semibold hover:text-blue-500 transition-colors duration-300 text-sm tracking-wide ${
                 darkMode ? "text-gray-300" : "text-gray-700"
               }`}
             >
               {name}
-            </Link>
+            </button>
           ))}
 
           {/* Dark Mode Toggle */}
@@ -142,23 +149,22 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         >
           <div className="container mx-auto px-6 py-4 space-y-4">
             {[
-              { name: "Home", path: "/" },
-              { name: "About", path: "/about" },
-              { name: "Projects", path: "/projects" },
-              { name: "Education", path: "/education" },
-              { name: "Experience", path: "/experience" },
-              { name: "Contact", path: "/contact" },
-            ].map(({ name, path }) => (
-              <Link
+              { name: "Home", id: "home" },
+              { name: "About", id: "about" },
+              { name: "Projects", id: "projects" },
+              { name: "Education", id: "education" },
+              { name: "Experience", id: "experience" },
+              { name: "Contact", id: "contact" },
+            ].map(({ name, id }) => (
+              <button
                 key={name}
-                to={path}
+                onClick={() => scrollToSection(id)}
                 className={`block font-semibold hover:text-blue-500 transition-colors duration-300 ${
                   darkMode ? "text-gray-300" : "text-gray-700"
                 }`}
-                onClick={() => setMobileMenuOpen(false)}
               >
                 {name}
-              </Link>
+              </button>
             ))}
 
             <motion.a
@@ -167,7 +173,6 @@ const Header = ({ darkMode, toggleDarkMode }) => {
               className="flex items-center gap-2 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg w-full justify-center"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => setMobileMenuOpen(false)}
             >
               <FiDownload className="text-lg" />
               Download Resume

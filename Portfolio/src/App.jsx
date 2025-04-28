@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
 import Projects from './components/Projects/Projects';
@@ -9,23 +8,48 @@ import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import ManipalhackathonAchievement from './components/Achievement/Achievement';
 
-
 const App = () => {
-  return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/experience" element={<ExperiencePage />} />
-        <Route path="/education" element={<EducationPage />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/achievements" element={<ManipalhackathonAchievement />} />
+  const [darkMode, setDarkMode] = useState(false);
 
-      </Routes>
-     
-    </Router>
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.documentElement.classList.toggle('dark', !darkMode);
+  };
+
+  return (
+    <div className={`min-h-screen ${darkMode ? 'dark bg-gray-900' : 'bg-white'}`}>
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      
+      <main className="pt-20">
+        <section id="home" className="min-h-screen">
+          <Main darkMode={darkMode} />
+        </section>
+        
+        <section id="about" className="min-h-screen py-20">
+          <About darkMode={darkMode} />
+        </section>
+        
+        <section id="projects" className="min-h-screen py-20">
+          <Projects darkMode={darkMode} />
+        </section>
+        
+        <section id="education" className="min-h-screen py-20">
+          <EducationPage darkMode={darkMode} />
+        </section>
+        
+        <section id="experience" className="min-h-screen py-20">
+          <ExperiencePage darkMode={darkMode} />
+        </section>
+        
+        <section id="achievements" className="min-h-screen py-20">
+          <ManipalhackathonAchievement darkMode={darkMode} />
+        </section>
+        
+        <section id="contact" className="min-h-screen py-20">
+          <Contact darkMode={darkMode} />
+        </section>
+      </main>
+    </div>
   );
 };
 
