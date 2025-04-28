@@ -1,11 +1,11 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
-import { BackgroundLines } from '../ui/background-lines';
+// import { BackgroundLines } from '../ui/background-lines';
 
 const About = () => {
   return (
    
-    <BackgroundLines className="relative">
+    // <BackgroundLines className="relative">
 
        
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -89,7 +89,7 @@ I’m a passionate Full-Stack Developer based in India, specializing in crafting
           </div>
         </div>
       </div>
-      </BackgroundLines >
+      // </BackgroundLines >
 
   );
 };
