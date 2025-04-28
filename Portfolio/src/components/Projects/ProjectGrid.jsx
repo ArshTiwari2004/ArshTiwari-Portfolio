@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ProjectCard from './ProjectCard';
+import ProjectCard from './ProjectsCard';
 
 const ProjectGrid = ({ projects, onProjectSelect }) => {
   // If no projects found

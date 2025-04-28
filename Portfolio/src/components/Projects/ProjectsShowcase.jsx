@@ -4,9 +4,9 @@ import CategoryFilter from './CategoryFilter';
 import ProjectGrid from './ProjectGrid';
 import ProjectCarousel from './ProjectCarousel';
 import FeaturedProjects from './FeaturedProjects';
-import ProjectModal from './ProjectModal';
+import ProjectModal from './ProjectsModal';
 import { projects, projectCategories } from './ProjectsData';
-import ParticleBackground from './ParticleBackground';
+import ProjectsParticleBackground from './Projectsparticlebackground';
 
 const ProjectsShowcase = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -59,7 +59,7 @@ const ProjectsShowcase = () => {
 
   return (
     <div className="relative min-h-screen py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <ParticleBackground />
+        <ProjectsParticleBackground />
       
       <motion.div 
         className="max-w-7xl mx-auto relative z-10"

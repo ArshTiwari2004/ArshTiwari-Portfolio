@@ -7,6 +7,7 @@ import EducationPage from './components/Education/Education';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import ManipalhackathonAchievement from './components/Achievement/Achievement';
+import ProjectsShowcase from './components/Projects/ProjectsShowcase';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -29,8 +30,12 @@ const App = () => {
           <About darkMode={darkMode} />
         </section>
         
-        <section id="projects" className="min-h-screen py-20">
+        {/* <section id="projects" className="min-h-screen py-20">
           <Projects darkMode={darkMode} />
+        </section> */}
+
+        <section id="projects-showcase" className="min-h-screen py-20">
+          <ProjectsShowcase darkMode={darkMode} />
         </section>
         
         <section id="education" className="min-h-screen py-20">
@@ -48,6 +53,8 @@ const App = () => {
         <section id="contact" className="min-h-screen py-20">
           <Contact darkMode={darkMode} />
         </section>
+
+
       </main>
     </div>
   );
