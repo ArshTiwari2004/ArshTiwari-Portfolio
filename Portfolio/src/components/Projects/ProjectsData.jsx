@@ -117,7 +117,7 @@ export const projects = [
     name: "Message Maze",
     tagline: "Dive into the world of anonymous conversations and have fun!",
     description: "This backend application is built using NEXT JS and allows users to send anonymous messages to eachother. It also prompts random messages which are generated through AI using the vercel AI SDK and Open AI which allows users to select and send those messages to other users being anonymous.",
-    image: "/messagemaze.png",
+    image: "/messsagemaz.png",
     techStack: ["Next JS", "ZOD", "shadcn", "vercel-ai SDK", "typescript" , "Open AI api", "mongoDB Atlas" , "bcrypt"],
     github: "https://github.com/ArshTiwari2004/MessageMaze",
     deployed: "https://github.com/ArshTiwari2004/MessageMaze",
