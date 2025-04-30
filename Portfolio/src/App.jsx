@@ -34,7 +34,7 @@ const App = () => {
           <Projects darkMode={darkMode} />
         </section> */}
 
-        <section id="projects-showcase" className="min-h-screen py-20">
+        <section id="projects" className="min-h-screen py-20">
           <ProjectsShowcase darkMode={darkMode} />
         </section>
         

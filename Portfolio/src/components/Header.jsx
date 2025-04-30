@@ -175,7 +175,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
               whileTap={{ scale: 0.98 }}
             >
               <FiDownload className="text-lg" />
-              Download Resume
+              Resume
             </motion.a>
           </div>
         </motion.div>

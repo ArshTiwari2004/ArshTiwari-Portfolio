@@ -10,19 +10,21 @@ export const projectCategories = [
 ];
 
 export const projects = [
-  {
-    id: 1,
-    name: "IncentiX",
-    tagline: "Decentralized platform designed to reward open source contributions",
-    description: "Transforming Open-Source with immediate crypto rewards for every contribution. Empowering developers, fueling innovation, and building a collaborative ecosystem where every effort is recognized instantly.",
-    image: "/incentix.png",
-    techStack: ["React", "Node.js", "Solidity", "mongoDB", "auth0"],
-    github: "https://github.com/ArshTiwari2004/IncentiX",
-    deployed: "https://incenti-x.vercel.app/",
-    categories: ['All', 'Web', 'Blockchain'],
-    featured: true,
-    icon: Shield
-  },
+
+
+    {
+        id: 7,
+        name: "Signal-X",
+        tagline: "AI-powered smart traffic management system",
+        description: "Signal-X is an hackathon-winning project that leverages AI and advanced computer vision to optimize real-time traffic flow. Using YOLO-based vehicle detection, Arduino-controlled signals, and MapMyIndia’s geospatial analytics, it dynamically adjusts traffic lights to reduce congestion, prioritize emergency vehicles, and improve road safety. Scalable and adaptable to cities of all sizes, SignalX offers a future-ready solution for smarter, safer urban commuting.",
+        image: "/signalx.png",
+        techStack: ["YOLOv8", "OpenCV", "Arduino", "MapMyIndia API", "Python", "Flask" , "React" ,"React Native" , "MongoDB"],
+        github: "https://github.com/ArshTiwari2004/Signal-X",
+        deployed: "https://signal-x-zkh5.vercel.app/",
+        categories: ['All', 'AI/ML', 'Web', 'Mobile'],
+        featured: true,
+        icon: Brain
+      },
   {
     id: 2,
     name: "Travello",
@@ -36,6 +38,45 @@ export const projects = [
     icon: Globe
   },
   {
+    id: 2,
+    name: "IncentiX",
+    tagline: "Decentralized platform designed to reward open source contributions",
+    description: "Transforming Open-Source with immediate crypto rewards for every contribution. Empowering developers, fueling innovation, and building a collaborative ecosystem where every effort is recognized instantly.",
+    image: "/incentix.png",
+    techStack: ["React", "Node.js", "Solidity", "mongoDB", "auth0"],
+    github: "https://github.com/ArshTiwari2004/IncentiX",
+    deployed: "https://incenti-x.vercel.app/",
+    categories: ['All', 'Web', 'Blockchain'],
+    icon: Shield
+  },
+  {
+    id: 7,
+    name: "Sahyog",
+    tagline: "AI-powered centralized disaster response and inventory management system",
+    description: "Sahyog is an AI-integrated disaster management platform built with React and Express, leveraging Google Cloud, Vertex AI, and Gemini APIs to predict disasters, analyze satellite/drone imagery for damage assessment, and coordinate real-time relief. It features RFID-based inventory tracking, resource optimization via OR-Tools, blockchain-backed transparency using Hyperledger Fabric, and multilingual alerts through Twilio and Firebase, ensuring effective communication and faster disaster response.",
+    image: "/sahyog.png",
+    techStack: ["React", "Express.js", "Google Cloud", "Vertex AI", "Gemini API", "Twilio", "Hyperledger Fabric", "Apache Kafka", "TensorFlow", "Python", "GCS"],
+    github: "https://github.com/ArshTiwari2004/Sahyog", // Replace with your repo link
+    deployed: "https://sahyog-project.vercel.app/", // Replace with your deployed link if available
+    categories: ['All', 'AI/ML', 'Web', 'Blockchain'],
+    featured: true,
+    icon: Brain
+  
+  
+},
+{
+    id: 8,
+    name: "Recap",
+    tagline: "AI-powered note organization that adapts to your learning style.",
+    description: "Recap is a smart learning platform that revolutionizes how students manage study materials. Built with React and Firebase, it uses AI via Groq, Cohere, and AssemblyAI to automatically organize notes, convert handwritten or audio input into searchable text, and generate flashcards and quizzes. With features like collaborative groups, smart PYQ analysis, and AI insights on weak areas, Recap personalizes your learning journey for maximum efficiency and engagement.",
+    image: "/recap.png",
+    techStack: ["React.js", "Tailwind CSS", "shadcn UI", "Node.js", "Firebase", "Groq", "AssemblyAI", "Cohere", "Tesseract.js", "Docker", "Kubernetes"],
+    github: "https://github.com/ArshTiwari2004/Recap",
+    deployed: "https://recap-5ajg.vercel.app/", // replace with actual deployed link if different
+    categories: ['All', 'AI/ML', 'Web'],
+    icon: Code
+  }, 
+  {
     id: 3,
     name: "Lumina",
     tagline: "Transforming Data into a Comprehensive, Insightful Annual Report",
@@ -45,7 +86,6 @@ export const projects = [
     github: "https://github.com/ArshTiwari2004/SIH",
     deployed: "https://lumina-beta.vercel.app/",
     categories: ['All', 'AI/ML', 'Web'],
-    featured: true,
     icon: Brain
   },
   {
@@ -77,13 +117,13 @@ export const projects = [
     name: "Message Maze",
     tagline: "Dive into the world of anonymous conversations and have fun!",
     description: "This backend application is built using NEXT JS and allows users to send anonymous messages to eachother. It also prompts random messages which are generated through AI using the vercel AI SDK and Open AI which allows users to select and send those messages to other users being anonymous.",
-    image: "/covid19.png",
+    image: "/messagemaze.png",
     techStack: ["Next JS", "ZOD", "shadcn", "vercel-ai SDK", "typescript" , "Open AI api", "mongoDB Atlas" , "bcrypt"],
     github: "https://github.com/ArshTiwari2004/MessageMaze",
     deployed: "https://github.com/ArshTiwari2004/MessageMaze",
     categories: ['All', 'Backend', 'AI/ML'],
     icon: Brain
-  }
+  },
 ];
 
 export const projectVariants = {
