@@ -4,10 +4,10 @@ Welcome to my personal portfolio website! This site showcases my projects, techn
 
 ## 🖥️ Tech Stack 
 
-- **Frontend**: React.js, HTML5, CSS3, Tailwind CSS
+- **Frontend**: React.js, Particle.js, Email.js, Tailwind
 - **Routing**: React Router
 - **Animations**: Framer Motion
-- **Deployment**: Vercel / Netlify
+- **Deployment**: Vercel 
 - **Version Control**: Git, GitHub
 
 ## 🌐 Live Demo
