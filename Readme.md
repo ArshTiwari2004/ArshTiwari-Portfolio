@@ -1,8 +1,15 @@
-# This is my personal portfolio
+# Arsh Tiwari - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This site showcases my projects, technical skills, experiences, and more. It's built to highlight my journey as a developer and connect with like-minded individuals and recruiters.
 
-Currently, two official plugins are available:
+## 🖥️ Tech Stack 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**: React.js, HTML5, CSS3, Tailwind CSS
+- **Routing**: React Router
+- **Animations**: Framer Motion
+- **Deployment**: Vercel / Netlify
+- **Version Control**: Git, GitHub
+
+## 🌐 Live Demo
+
+Check out the live website here: [My Portfolio](https://arsh-tiwari-portfolio.vercel.app/)
